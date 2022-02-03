@@ -1,4 +1,6 @@
 package com.testScript;
+import org.openqa.selenium.By;
+
 import com.pages.CheckoutPage;
 import com.pages.GoToCartPage;
 import com.pages.ProductDetailsPage;
@@ -15,6 +17,7 @@ public class Test {
     	ConnectionDriver.initConnection();
     	try {
     	searchPage.search();
+    	searchPage.iUnderstand();
     	prodDetailPage.addToCart();
     	goToCartPage.goToCart();
     	checkoutPage.checkout();
